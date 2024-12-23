@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -10,19 +10,14 @@ import UserPage from './pages/UserPage';
 const App = () => {
     return (
         <Router>
-            <div className="app">
                 <Header />
-                <main>
-                  <Routes>
-                      <Route path="/" element={<Home />} />
-                      <Route path="/menu" element={<Menu />} />
-                      <Route path="/cart" element={<CartPage />} />
-                      <Route path="/user" element={<UserPage />} />
-                  </Routes>
-                </main>
-                
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/menu" element={<Menu />} />
+                    <Route path="/cart" element={<CartPage />} />
+                    <Route path="/user" element={<UserPage />} />
+                </Routes>
                 <Footer />
-            </div>
         </Router>
     );
 };
