@@ -334,24 +334,3 @@ a:hover {
     
     
 }
-/* Responsive Design Phone*/
-@media (max-width: 480px) {
-  nav{
-    flex-direction: column; 
-  }
-  .logo{
-    color: #c82333;
-  }
-}
-/* Responsive Design */
-@media (max-width: 1024px) {
-  nav{
-    flex-direction: column; 
-  }
-  .logo{
-    color: #c82333;
-  }
-}
-
-
-
