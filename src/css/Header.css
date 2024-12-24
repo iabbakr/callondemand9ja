@@ -65,7 +65,7 @@
         right: 100%;
         top: 70px; /* Adjust based on your header height */
         width: 100%;
-        height: calc(100vh - 70px);
+        height: auto;
         background: #333;
         flex-direction: column;
         align-items: center;
