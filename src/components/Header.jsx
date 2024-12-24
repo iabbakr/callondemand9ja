@@ -1,11 +1,12 @@
 import React from 'react';
 import '../css/Header.css';
 
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('.nav-links').classList.toggle('active');
-});
 
 const Header = () => {
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+
     return (
         <header className="header">
             <div className="logo">
