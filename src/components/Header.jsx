@@ -16,14 +16,14 @@ const Header = () => {
             </div>
             
             <nav>
-                <ul className="nav-links">
+                <ul className={`nav-links ${isNavOpen ? 'active' : ''}`}>
                     <li><a href="/">Home</a></li>
                     <li><a href="/menu">Menu</a></li>
                     <li><a href="/cart">Cart</a></li>
                     <li><a href="/user">User</a></li>  
                 </ul>
             </nav>
-            <div class="menu-toggle">
+            <div class="menu-toggle" onClick={toggleNav}>
                 <span></span>
                 <span></span>
                 <span></span>
