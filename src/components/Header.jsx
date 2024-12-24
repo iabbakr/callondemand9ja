@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../css/Header.css';
 
 
 const Header = () => {
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-        document.querySelector('.nav-links').classList.toggle('active');
-    });
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    const toggleNav = () => {
+        setIsNavOpen(!isNavOpen);
+    };
 
     return (
         <header className="header">
