@@ -29,29 +29,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header Styles */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #343a40;
-  color: white;
-}
-
-.header h1 {
-  font-size: 1.5rem;
-}
-
-.header nav a {
-  margin: 0 1rem;
-  font-weight: bold;
-  color: white;
-}
-
-.header nav a:hover {
-  color: #ffce44;
-}
 
 /* Home Page Styles */
 .home {
@@ -352,8 +329,13 @@ a:hover {
   text-align: center;
 }
 
-/* Responsive Design */
+/* Responsive Design Tablet*/
 @media (max-width: 768px) {
+    
+    
+}
+/* Responsive Design Phone*/
+@media (max-width: 480px) {
   nav{
     flex-direction: column; 
   }
@@ -361,4 +343,15 @@ a:hover {
     color: #c82333;
   }
 }
+/* Responsive Design */
+@media (max-width: 1024px) {
+  nav{
+    flex-direction: column; 
+  }
+  .logo{
+    color: #c82333;
+  }
+}
+
+
 
