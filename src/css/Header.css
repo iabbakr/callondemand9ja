@@ -63,7 +63,7 @@
     .nav-links {
         position: absolute;
         right: 100%;
-        top: 70px; /* Adjust based on your header height */
+        top: 10px; /* Adjust based on your header height */
         width: 100%;
         height: auto;
         background: #333;
