@@ -10,14 +10,14 @@ import UserPage from './components/UserPage';
 const App = () => {
     return (
         <Router>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/menu" element={<Menu />} />
-                    <Route path="/cart" element={<CartPage />} />
-                    <Route path="/user" element={<UserPage />} />
-                </Routes>
-                <Footer />
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/user" element={<UserPage />} />
+          </Routes>
+          <Footer />
         </Router>
     );
 };
