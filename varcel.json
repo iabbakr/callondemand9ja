@@ -1,10 +1,14 @@
 
 {
     "rewrites": [
-        {"source": "/", 
-        "destination": "/"},
-        {"source": "/menu", 
-        "destination": "/menu"}
+        {"src": "/", 
+        "dest": "/"},
+        {"src": "/", 
+        "dest": "/menu"},
+        {"src": "/", 
+        "dest": "/cart"},
+        {"src": "/", 
+        "dest": "/user"}
     ]
 }
 
