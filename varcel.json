@@ -1,0 +1,11 @@
+
+{
+    "rewrites": [
+        {"source": "/", 
+        "destination": "/"},
+        {"source": "/menu", 
+        "destination": "/menu"}
+    ]
+}
+
+
