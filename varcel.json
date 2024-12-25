@@ -1,15 +1,8 @@
-
 {
     "rewrites": [
-        {"src": "/", 
-        "dest": "/"},
-        {"src": "/menu", 
-        "dest": "/menu"},
-        {"src": "/", 
-        "dest": "/cart"},
-        {"src": "/", 
-        "dest": "/user"}
+      { 
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
     ]
-}
-
-
+  }
