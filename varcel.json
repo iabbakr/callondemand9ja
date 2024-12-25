@@ -1,5 +1,4 @@
-{
-    "output": "build",
+
     "rewrites": [
       { 
         "source": "/(.*)",
@@ -10,4 +9,4 @@
         "destination": "/menu"
       }
     ]
-  }
+  
