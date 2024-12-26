@@ -1,4 +1,3 @@
-// FoodItem.js
 import React from 'react';
 
 const FoodItem = ({ name, price, image, addToCart }) => {

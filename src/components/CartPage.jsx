@@ -1,7 +1,26 @@
-// CartPage.js
-import React from 'react';
+import React, { useState } from 'react';
 
-const CartPage = ({ cart, updateQuantity, removeFromCart }) => {
+const CartPage = () => {
+    const [cart, setCart] = useState([
+        { id: 1, name: "Spaghetti", price: 1500, quantity: 2 },
+        { id: 2, name: "Beans", price: 1000, quantity: 1 },
+    ]);
+
+    // Update Quantity
+    const updateQuantity = (id, quantity) => {
+        const updatedCart = cart.map((item) =>
+            item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item
+        );
+        setCart(updatedCart);
+    };
+
+    // Remove Item
+    const removeFromCart = (id) => {
+        const updatedCart = cart.filter((item) => item.id !== id);
+        setCart(updatedCart);
+    };
+
+    // Calculate Total
     const calculateTotal = () => {
         return cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
     };
